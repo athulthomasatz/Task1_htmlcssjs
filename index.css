@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
+}
+
+.switch input {
+  display: none;
+}
+
+/* Style the slider container */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Create the slider "circle" (the knob) */
+.switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* When checkbox is checked */
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+/* Move the slider knob to the right when checked */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+}
+.toggleComponents{
+    padding: 18px;
+    width: 410px;
+    background-color:EBEDF2;
+}
+.togglehead{
+    padding: 16px;
+}
+.toggle-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.idea{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.subToggle{
+    padding: 8px;
+    /* background-color: lightcoral; */
+}
+.subToggle h3{
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.subToggle p{
+    font-weight: 100;
+}
+
+.bttn{
+    background-color: lightsalmon;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    align-self: center;
+    margin-left: 13px;
+}
+
+
+/* Navbar */
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: EBEDF2;
+    border-bottom: 1px solid grey;
+    visibility: visible;
+}
+.navbar h2{
+    align-self: center;
+    font-weight: 500;
+}
+.navlist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: EBEDF2;
+}
+.navlist h3{
+    padding: 10px;
+    align-self: center;
+    font-weight: 200;
+}
+
+
+/* herosection  */
+.hero{
+    padding: 10px;
+}
+
+.profileimg{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.profilenamedesc h2{
+    font-weight: bold;
+}
+
+
+.profilenamedesc h3{
+    font-weight: bold;
+}
+
+.imageanddesc{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    height: 35px;
+    /* justify-content: space-evenly; */
+    /* width: 100px; */
+    background-color: EBEDF2;
+    /* background-color: brown; */
+    margin-top : 30px;
+    
+}
+
+.items:hover{
+    background-color: rgb(174, 193, 210);
+}
+
+.sideitemsimage{
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.sidename{
+    font-weight: 200;
+    align-self: center;
+}
+/* dashboard */
+
+.dashboard{
+    margin-top: 40px;
+    margin-left: 10px;
+    background-color: EBEDF2;   
+    /* background-color: burlywood; */
+    height: 550px;
+}
+.dashhead{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.dashboard h1{
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.dashboard p{
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.dashbtn{
+    border-radius: 10px;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    border: none;
+}
+.dashbtn:hover{
+    background-color: lightblue;
+}
